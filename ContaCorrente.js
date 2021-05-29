@@ -19,7 +19,12 @@ export class ContaCorrente{
   get saldo(){
     return this._saldo;
   }
-  sacar(valor){
+
+  constructor(cliente, agencia) {
+    this.cliente = cliente;
+    this.agencia = agencia;
+  }
+  sacar(valor) {
     if(this._saldo >= valor){
       this._saldo -= valor;
       return valor;
@@ -27,7 +32,7 @@ export class ContaCorrente{
     console.log(this._saldo);
   }
 
-  depositar(valor){
+  depositar(valor) {
     if(valor <= 0){
       return;
     }
