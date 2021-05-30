@@ -1,9 +1,8 @@
 export class Conta{
-  constructor(tipo, saldoInicial, cliente, agencia){
+  constructor(saldoInicial, cliente, agencia){
     this._saldo = saldoInicial;
     this._cliente = cliente;
     this._agencia = agencia;
-    this._tipo = tipo;
   }
 
   set cliente(novoValor){
