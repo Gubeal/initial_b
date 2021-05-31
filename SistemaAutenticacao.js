@@ -1,5 +1,7 @@
 /*
-Ser autenticável é ter o método autenticar
+Ser autenticável significa ter o método autenticar
+
+ducky type
 */
 
 export class SistemaAutenticacao{
